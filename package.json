@@ -1,0 +1,35 @@
+{
+  "name": "anyforum",
+  "version": "1.0.0",
+  "description": "A fully local SaaS forum application with React and Node.js",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node backend/server.js",
+    "client": "cd frontend && npm start",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "install-all": "npm install && cd frontend && npm install"
+  },
+  "keywords": ["forum", "react", "nodejs", "local"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3",
+    "concurrently": "^8.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "backend/**/*.js",
+      "!backend/node_modules/**"
+    ]
+  }
+}
