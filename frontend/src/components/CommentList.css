@@ -1,0 +1,112 @@
+.comment-list {
+  margin-top: 30px;
+}
+
+.list-title {
+  font-size: 1.8rem;
+  color: #c4b5fd;
+  margin-bottom: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(124, 58, 237, 0.05);
+  border: 2px dashed rgba(168, 85, 247, 0.3);
+  border-radius: 16px;
+  margin-top: 20px;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.empty-state p {
+  color: #a78bca;
+  font-size: 1.1rem;
+}
+
+.comment-card {
+  background: rgba(124, 58, 237, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 16px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.comment-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #a855f7 0%, #7c3aed 100%);
+}
+
+.comment-card:hover {
+  border-color: rgba(168, 85, 247, 0.5);
+  box-shadow: 0 8px 32px rgba(168, 85, 247, 0.15);
+  transform: translateX(4px);
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.comment-author {
+  color: #c084fc;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.comment-timestamp {
+  color: #8b7ba8;
+  font-size: 0.85rem;
+}
+
+.comment-text {
+  color: #e0d0ff;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.delete-button {
+  padding: 8px 16px;
+  background: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 8px;
+  color: #c084fc;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete-button:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.5);
+  color: #fca5a5;
+}
+
+@media (max-width: 768px) {
+  .comment-card {
+    padding: 16px;
+  }
+
+  .list-title {
+    font-size: 1.5rem;
+  }
+}
