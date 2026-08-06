@@ -58,7 +58,7 @@ npm run dev
 
 This will:
 - Start the Express server on `http://localhost:5000`
-- Start the React dev server on `http://localhost:3000`
+- Start the React dev server on `http://localhost:3002`
 - The React app proxies API requests to the backend
 
 ### Individual Commands
@@ -95,6 +95,6 @@ npm run build     # Build React app for production
 ## Definition of Done
 
 - Running `npm run dev` starts both servers
-- Navigate to `http://localhost:3000` to see the AnyFourm interface
+- Navigate to `http://localhost:3002` to see the AnyFourm interface
 - Can post and delete comments successfully
 - All tests pass with `npm test`
