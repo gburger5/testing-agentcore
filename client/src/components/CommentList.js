@@ -31,7 +31,7 @@ function CommentList({ comments, onDeleteComment }) {
           <div key={comment.id} className="comment-card">
             <div className="comment-header">
               <div className="comment-author">
-                <div className="avatar">{comment.author[0].toUpperCase()}</div>
+                <div className="avatar">{comment.author?.[0]?.toUpperCase() || '?'}</div>
                 <div className="author-info">
                   <h4>{comment.author}</h4>
                   <span className="comment-date">{formatDate(comment.timestamp)}</span>
