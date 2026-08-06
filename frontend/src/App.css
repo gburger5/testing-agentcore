@@ -1,0 +1,84 @@
+.App {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.App-header {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.logo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.logo {
+  font-size: 4rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #c084fc 0%, #a855f7 50%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
+  letter-spacing: -2px;
+  margin: 0;
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.logo-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.3) 0%, transparent 70%);
+  filter: blur(40px);
+  z-index: -1;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.tagline {
+  color: #c4b5fd;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.App-main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    text-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 50px rgba(168, 85, 247, 0.8), 0 0 70px rgba(168, 85, 247, 0.4);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 3rem;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+  }
+}
