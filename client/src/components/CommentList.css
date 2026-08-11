@@ -4,7 +4,7 @@
 
 .list-title {
   font-size: 1.8rem;
-  color: #93c5fd;
+  color: #fca5a5;
   margin-bottom: 2rem;
   font-weight: 600;
   text-align: center;
@@ -17,12 +17,12 @@
 }
 
 .comment-card {
-  background: rgba(37, 99, 235, 0.15);
-  border: 1px solid rgba(59, 130, 246, 0.3);
+  background: rgba(220, 38, 38, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
   border-radius: 16px;
   padding: 1.5rem;
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 4px 20px rgba(220, 38, 38, 0.2);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -35,13 +35,13 @@
   left: 0;
   width: 4px;
   height: 100%;
-  background: linear-gradient(180deg, #2563eb 0%, #3b82f6 100%);
+  background: linear-gradient(180deg, #dc2626 0%, #ef4444 100%);
 }
 
 .comment-card:hover {
   transform: translateX(4px);
-  border-color: rgba(59, 130, 246, 0.5);
-  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.3);
+  border-color: rgba(239, 68, 68, 0.5);
+  box-shadow: 0 8px 30px rgba(220, 38, 38, 0.3);
 }
 
 .comment-header {
@@ -61,25 +61,25 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-weight: 700;
   font-size: 1.2rem;
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
 }
 
 .author-info h4 {
-  color: #dbeafe;
+  color: #fee2e2;
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
 }
 
 .comment-date {
-  color: #60a5fa;
+  color: #f87171;
   font-size: 0.85rem;
   opacity: 0.8;
 }
@@ -110,7 +110,7 @@
 }
 
 .comment-content p {
-  color: #dbeafe;
+  color: #fee2e2;
   line-height: 1.6;
   font-size: 1rem;
   margin: 0;
@@ -120,8 +120,8 @@
 .empty-state {
   text-align: center;
   padding: 4rem 2rem;
-  background: rgba(37, 99, 235, 0.1);
-  border: 2px dashed rgba(59, 130, 246, 0.3);
+  background: rgba(220, 38, 38, 0.1);
+  border: 2px dashed rgba(239, 68, 68, 0.3);
   border-radius: 16px;
   margin-top: 2rem;
 }
@@ -133,13 +133,13 @@
 }
 
 .empty-state h3 {
-  color: #93c5fd;
+  color: #fca5a5;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
 .empty-state p {
-  color: #60a5fa;
+  color: #f87171;
   font-size: 1rem;
 }
 
