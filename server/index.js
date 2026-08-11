@@ -16,7 +16,7 @@ let comments = [
   {
     id: 1,
     author: 'System',
-    content: 'Welcome to AnyFourm! Share your thoughts below.',
+    content: 'Welcome to AnyForum! Share your thoughts below.',
     timestamp: new Date().toISOString()
   }
 ];
@@ -66,7 +66,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.listen(PORT, () => {
-  console.log(`🚀 AnyFourm server running on http://localhost:${PORT}`);
+  console.log(`🚀 AnyForum server running on http://localhost:${PORT}`);
 });
 
 module.exports = app;
