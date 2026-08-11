@@ -67,7 +67,7 @@ function App() {
       <header className="App-header">
         <div className="logo-container">
           <div className="logo-glow"></div>
-          <h1 className="logo">AnyFourm</h1>
+          <h1 className="logo">AnyForum</h1>
         </div>
         <p className="tagline">Share Your Thoughts in the Digital Realm</p>
       </header>
@@ -97,7 +97,7 @@ function App() {
       </main>
 
       <footer className="App-footer">
-        <p>AnyFourm © 2026 - Powered by the Future</p>
+        <p>AnyForum © 2026 - Powered by the Future</p>
       </footer>
     </div>
   );
