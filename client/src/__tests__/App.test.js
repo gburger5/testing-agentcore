@@ -18,7 +18,7 @@ describe('App Component', () => {
 
     render(<App />);
 
-    expect(screen.getByText('AnyFourm')).toBeInTheDocument();
+    expect(screen.getByText('AnyForum')).toBeInTheDocument();
     expect(screen.getByText('Share Your Thoughts in the Digital Realm')).toBeInTheDocument();
   });
 
@@ -70,6 +70,6 @@ describe('App Component', () => {
 
     render(<App />);
 
-    expect(screen.getByText(/AnyFourm © 2026 - Powered by the Future/i)).toBeInTheDocument();
+    expect(screen.getByText(/AnyForum © 2026 - Powered by the Future/i)).toBeInTheDocument();
   });
 });
