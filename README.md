@@ -1,4 +1,4 @@
-# AnyFourm
+# AnyForum
 
 A futuristic local SaaS forum application with a clean purple design. Built with React frontend and Node.js backend.
 

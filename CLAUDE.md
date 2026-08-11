@@ -2,7 +2,7 @@
 
 ## Project
 
-**AnyFourm** - A futuristic forum application with a React frontend and Express backend.
+**AnyForum** - A futuristic forum application with a React frontend and Express backend.
 
 ## Architecture
 
@@ -95,6 +95,6 @@ npm run build     # Build React app for production
 ## Definition of Done
 
 - Running `npm run dev` starts both servers
-- Navigate to `http://localhost:3002` to see the AnyFourm interface
+- Navigate to `http://localhost:3002` to see the AnyForum interface
 - Can post and delete comments successfully
 - All tests pass with `npm test`
